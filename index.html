@@ -9,6 +9,7 @@
       integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="css/style.css" />
     <title>Chats | Kakao Clone</title>
   </head>
   <body>
@@ -44,26 +45,24 @@
     </header>
     <main class="chats">
       <ul class="chats__list">
-        <a href="chat.html">
-          <li class="chats__chat chat">
-            <div class="chat__column">
-              <img class="chat__avatar g-avatar" src="images/iu.jfif" />
-              <div class="chat__content">
-                <span class="chat__username">
-                  이지금
-                </span>
-                <span class="chat__preview">
-                  나만 몰랐었던 이야기~
-                </span>
+        <li class="chats__chat chat">
+          <a href="chat.html">
+            <div class="chats__chat friend">
+              <div class="friend__column">
+                <img src="images/iu.jfif" class="m-avatar friend__avatar" />
+                <div class="friend__content">
+                  <span class="friend__name">이지은</span>
+                  <span class="friend__bottom-text"
+                    >지은이 IU의 LOVE POEM!!</span
+                  >
+                </div>
+              </div>
+              <div class="friend__column">
+                <span class="chat__timestamp">March 8</span>
               </div>
             </div>
-            <div class="chat__column">
-              <span class="chat__timestamp">
-                Yesterday
-              </span>
-            </div>
-          </li>
-        </a>
+          </a>
+        </li>
       </ul>
     </main>
     <nav class="nav">
@@ -75,6 +74,7 @@
         </li>
         <li class="nav__list-item">
           <a href="index.html" class="nav__list-link">
+            <div class="nav__badge">8</div>
             <i class="fas fa-comment"></i>
           </a>
         </li>
@@ -92,3 +92,37 @@
     </nav>
   </body>
 </html>
+
+<!-- 
+  font awesome
+  google font
+  reset.css
+  normalize.css
+
+  vsc 단축키 ( File - Preferences - Keyboard Shortcuts)
+  
+  1) 마우스가 가는 곳 마다 커서 만들기
+  Alt + ⇧ + Mouse Drag
+  2) 선택된 영역에 커서 만들기
+  Alt + ⇧ + i 
+  3) 코드 블록 한방에 코멘트 처리하기
+  Ctrl + /
+  4) 코드 복사해서 위/아래로 움직이기
+  Alt + ⇧ + ↑ / ↓
+  5) 코드 위/아래로 움직이기
+  Alt + ↑ / ↓
+  6) 클릭하는 곳마다 커서 생성dd
+  Alt + Click
+  7) 반복되는 단어 한방에 수정
+  Ctrl + D
+  8) 파일 맨 위-아래로 한번에 이동하기
+  Ctrl + Home / End
+  9) 사이드바 숨기기
+  Ctrl + B
+  10) 커서 뒤로가기 / 앞으로가기
+  Alt + ← / →
+  11) 커서가 있는 줄부터 그 아래의 줄들을 아래로 내리기
+  Ctrl + Shift + Enter
+  12) 같은 단어 모두 선택
+  Ctrl + F2
+-->
