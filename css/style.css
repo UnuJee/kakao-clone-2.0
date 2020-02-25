@@ -9,6 +9,7 @@
 @import "more.css";
 @import "settings.css";
 @import "chat.css";
+@import "mobile.css";
 
 * {
   box-sizing: border-box;
@@ -22,12 +23,25 @@ body {
 }
 
 main {
-  padding-top: 30px;
+  padding-top: 111px;
   z-index: 1;
   position: relative;
-  top: 81px;
 }
 a {
   color: inherit;
   text-decoration: none;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+main {
+  animation: fadeIn 0.5s ease-in-out;
 }
